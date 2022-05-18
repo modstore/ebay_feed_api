@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Modstore\EbayFeedApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Modstore\EbayFeedApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Modstore\EbayFeedApi\ObjectSerializer;
 
 /**
  * InventoryTaskCollection Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Modstore\EbayFeedApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -64,7 +64,7 @@ class InventoryTaskCollection implements ModelInterface, ArrayAccess, \JsonSeria
         'next' => 'string',
         'offset' => 'int',
         'prev' => 'string',
-        'tasks' => '\OpenAPI\Client\Model\InventoryTask[]',
+        'tasks' => '\Modstore\EbayFeedApi\Model\InventoryTask[]',
         'total' => 'int'
     ];
 
@@ -364,7 +364,7 @@ class InventoryTaskCollection implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets tasks
      *
-     * @return \OpenAPI\Client\Model\InventoryTask[]|null
+     * @return \Modstore\EbayFeedApi\Model\InventoryTask[]|null
      */
     public function getTasks()
     {
@@ -374,7 +374,7 @@ class InventoryTaskCollection implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets tasks
      *
-     * @param \OpenAPI\Client\Model\InventoryTask[]|null $tasks An array of the inventory tasks on this page. The tasks are sorted by creation date.<br /><br /><span class=\"tablenote\"><strong>Note:</strong> An empty array is returned if the filter criteria excludes all tasks.</span>
+     * @param \Modstore\EbayFeedApi\Model\InventoryTask[]|null $tasks An array of the inventory tasks on this page. The tasks are sorted by creation date.<br /><br /><span class=\"tablenote\"><strong>Note:</strong> An empty array is returned if the filter criteria excludes all tasks.</span>
      *
      * @return self
      */

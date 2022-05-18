@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Modstore\EbayFeedApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Modstore\EbayFeedApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Modstore\EbayFeedApi\ObjectSerializer;
 
 /**
  * Error Class Doc Comment
  *
  * @category Class
  * @description This type defines the fields that can be returned in an error.
- * @package  OpenAPI\Client
+ * @package  Modstore\EbayFeedApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -67,7 +67,7 @@ class Error implements ModelInterface, ArrayAccess, \JsonSerializable
         'long_message' => 'string',
         'message' => 'string',
         'output_ref_ids' => 'string[]',
-        'parameters' => '\OpenAPI\Client\Model\ErrorParameter[]',
+        'parameters' => '\Modstore\EbayFeedApi\Model\ErrorParameter[]',
         'subdomain' => 'string'
     ];
 
@@ -425,7 +425,7 @@ class Error implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets parameters
      *
-     * @return \OpenAPI\Client\Model\ErrorParameter[]|null
+     * @return \Modstore\EbayFeedApi\Model\ErrorParameter[]|null
      */
     public function getParameters()
     {
@@ -435,7 +435,7 @@ class Error implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets parameters
      *
-     * @param \OpenAPI\Client\Model\ErrorParameter[]|null $parameters An array of name/value pairs that describe details the error condition. These are useful when multiple errors are returned.
+     * @param \Modstore\EbayFeedApi\Model\ErrorParameter[]|null $parameters An array of name/value pairs that describe details the error condition. These are useful when multiple errors are returned.
      *
      * @return self
      */

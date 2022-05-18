@@ -4,7 +4,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Modstore\EbayFeedApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace Modstore\EbayFeedApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Modstore\EbayFeedApi\ApiException;
+use Modstore\EbayFeedApi\Configuration;
+use Modstore\EbayFeedApi\HeaderSelector;
+use Modstore\EbayFeedApi\ObjectSerializer;
 
 /**
  * InventoryTaskApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Modstore\EbayFeedApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -118,10 +118,10 @@ class InventoryTaskApi
     /**
      * Operation createInventoryTask
      *
-     * @param  \OpenAPI\Client\Model\CreateInventoryTaskRequest $create_inventory_task_request The request payload containing the version, feedType, and optional filterCriteria. (required)
+     * @param  \Modstore\EbayFeedApi\Model\CreateInventoryTaskRequest $create_inventory_task_request The request payload containing the version, feedType, and optional filterCriteria. (required)
      * @param  string $x_ebay_c_marketplace_id The ID of the eBay marketplace where the item is hosted. &lt;p&gt; &lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;strong&gt;Note:&lt;/strong&gt; This value is case sensitive.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;For example:&lt;/p&gt;&lt;p&gt;&lt;code&gt;X-EBAY-C-MARKETPLACE-ID:EBAY_US&lt;/code&gt;&lt;/p&gt;&lt;p&gt;This identifies the eBay marketplace that applies to this task. See &lt;a href&#x3D;\&quot;/api-docs/sell/feed/types/bas:MarketplaceIdEnum\&quot;&gt;MarketplaceIdEnum&lt;/a&gt;.&lt;/p&gt; (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Modstore\EbayFeedApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -133,10 +133,10 @@ class InventoryTaskApi
     /**
      * Operation createInventoryTaskWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\CreateInventoryTaskRequest $create_inventory_task_request The request payload containing the version, feedType, and optional filterCriteria. (required)
+     * @param  \Modstore\EbayFeedApi\Model\CreateInventoryTaskRequest $create_inventory_task_request The request payload containing the version, feedType, and optional filterCriteria. (required)
      * @param  string $x_ebay_c_marketplace_id The ID of the eBay marketplace where the item is hosted. &lt;p&gt; &lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;strong&gt;Note:&lt;/strong&gt; This value is case sensitive.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;For example:&lt;/p&gt;&lt;p&gt;&lt;code&gt;X-EBAY-C-MARKETPLACE-ID:EBAY_US&lt;/code&gt;&lt;/p&gt;&lt;p&gt;This identifies the eBay marketplace that applies to this task. See &lt;a href&#x3D;\&quot;/api-docs/sell/feed/types/bas:MarketplaceIdEnum\&quot;&gt;MarketplaceIdEnum&lt;/a&gt;.&lt;/p&gt; (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Modstore\EbayFeedApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -191,7 +191,7 @@ class InventoryTaskApi
     /**
      * Operation createInventoryTaskAsync
      *
-     * @param  \OpenAPI\Client\Model\CreateInventoryTaskRequest $create_inventory_task_request The request payload containing the version, feedType, and optional filterCriteria. (required)
+     * @param  \Modstore\EbayFeedApi\Model\CreateInventoryTaskRequest $create_inventory_task_request The request payload containing the version, feedType, and optional filterCriteria. (required)
      * @param  string $x_ebay_c_marketplace_id The ID of the eBay marketplace where the item is hosted. &lt;p&gt; &lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;strong&gt;Note:&lt;/strong&gt; This value is case sensitive.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;For example:&lt;/p&gt;&lt;p&gt;&lt;code&gt;X-EBAY-C-MARKETPLACE-ID:EBAY_US&lt;/code&gt;&lt;/p&gt;&lt;p&gt;This identifies the eBay marketplace that applies to this task. See &lt;a href&#x3D;\&quot;/api-docs/sell/feed/types/bas:MarketplaceIdEnum\&quot;&gt;MarketplaceIdEnum&lt;/a&gt;.&lt;/p&gt; (optional)
      *
      * @throws \InvalidArgumentException
@@ -210,7 +210,7 @@ class InventoryTaskApi
     /**
      * Operation createInventoryTaskAsyncWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\CreateInventoryTaskRequest $create_inventory_task_request The request payload containing the version, feedType, and optional filterCriteria. (required)
+     * @param  \Modstore\EbayFeedApi\Model\CreateInventoryTaskRequest $create_inventory_task_request The request payload containing the version, feedType, and optional filterCriteria. (required)
      * @param  string $x_ebay_c_marketplace_id The ID of the eBay marketplace where the item is hosted. &lt;p&gt; &lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;strong&gt;Note:&lt;/strong&gt; This value is case sensitive.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;For example:&lt;/p&gt;&lt;p&gt;&lt;code&gt;X-EBAY-C-MARKETPLACE-ID:EBAY_US&lt;/code&gt;&lt;/p&gt;&lt;p&gt;This identifies the eBay marketplace that applies to this task. See &lt;a href&#x3D;\&quot;/api-docs/sell/feed/types/bas:MarketplaceIdEnum\&quot;&gt;MarketplaceIdEnum&lt;/a&gt;.&lt;/p&gt; (optional)
      *
      * @throws \InvalidArgumentException
@@ -247,7 +247,7 @@ class InventoryTaskApi
     /**
      * Create request for operation 'createInventoryTask'
      *
-     * @param  \OpenAPI\Client\Model\CreateInventoryTaskRequest $create_inventory_task_request The request payload containing the version, feedType, and optional filterCriteria. (required)
+     * @param  \Modstore\EbayFeedApi\Model\CreateInventoryTaskRequest $create_inventory_task_request The request payload containing the version, feedType, and optional filterCriteria. (required)
      * @param  string $x_ebay_c_marketplace_id The ID of the eBay marketplace where the item is hosted. &lt;p&gt; &lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;strong&gt;Note:&lt;/strong&gt; This value is case sensitive.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;For example:&lt;/p&gt;&lt;p&gt;&lt;code&gt;X-EBAY-C-MARKETPLACE-ID:EBAY_US&lt;/code&gt;&lt;/p&gt;&lt;p&gt;This identifies the eBay marketplace that applies to this task. See &lt;a href&#x3D;\&quot;/api-docs/sell/feed/types/bas:MarketplaceIdEnum\&quot;&gt;MarketplaceIdEnum&lt;/a&gt;.&lt;/p&gt; (optional)
      *
      * @throws \InvalidArgumentException
@@ -349,9 +349,9 @@ class InventoryTaskApi
      *
      * @param  string $task_id The ID of the task. This ID was generated when the task was created by the &lt;strong&gt;createInventoryTask&lt;/strong&gt; method (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Modstore\EbayFeedApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\InventoryTask
+     * @return \Modstore\EbayFeedApi\Model\InventoryTask
      */
     public function getInventoryTask($task_id)
     {
@@ -364,9 +364,9 @@ class InventoryTaskApi
      *
      * @param  string $task_id The ID of the task. This ID was generated when the task was created by the &lt;strong&gt;createInventoryTask&lt;/strong&gt; method (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Modstore\EbayFeedApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\InventoryTask, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Modstore\EbayFeedApi\Model\InventoryTask, HTTP status code, HTTP response headers (array of strings)
      */
     public function getInventoryTaskWithHttpInfo($task_id)
     {
@@ -409,20 +409,20 @@ class InventoryTaskApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\InventoryTask' === '\SplFileObject') {
+                    if ('\Modstore\EbayFeedApi\Model\InventoryTask' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InventoryTask', []),
+                        ObjectSerializer::deserialize($content, '\Modstore\EbayFeedApi\Model\InventoryTask', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\InventoryTask';
+            $returnType = '\Modstore\EbayFeedApi\Model\InventoryTask';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -440,7 +440,7 @@ class InventoryTaskApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InventoryTask',
+                        '\Modstore\EbayFeedApi\Model\InventoryTask',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -478,7 +478,7 @@ class InventoryTaskApi
      */
     public function getInventoryTaskAsyncWithHttpInfo($task_id)
     {
-        $returnType = '\OpenAPI\Client\Model\InventoryTask';
+        $returnType = '\Modstore\EbayFeedApi\Model\InventoryTask';
         $request = $this->getInventoryTaskRequest($task_id);
 
         return $this->client
@@ -621,9 +621,9 @@ class InventoryTaskApi
      * @param  string $limit The maximum number of tasks that can be returned on each page of the paginated response. Use this parameter in conjunction with the &lt;strong&gt;offset&lt;/strong&gt; parameter to control the pagination of the output. &lt;p&gt; &lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;strong&gt;Note:&lt;/strong&gt; This feature employs a zero-based list, where the first item in the list has an offset of &lt;code&gt;0&lt;/code&gt;.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;For example, if &lt;strong&gt;offset&lt;/strong&gt; is set to 10 and &lt;strong&gt;limit&lt;/strong&gt; is set to 10, the call retrieves tasks 11 thru 20 from the result set.&lt;/p&gt;&lt;p&gt;If this parameter is omitted, the default value is used. &lt;br /&gt;&lt;br /&gt;&lt;b&gt;Default: &lt;/b&gt; 10 &lt;br /&gt;&lt;br /&gt;&lt;b&gt;Maximum: &lt;/b&gt;500 (optional)
      * @param  string $offset The number of tasks to skip in the result set before returning the first task in the paginated response. &lt;p&gt;Combine &lt;strong&gt;offset&lt;/strong&gt; with the &lt;strong&gt;limit&lt;/strong&gt; query parameter to control the items returned in the response. For example, if you supply an &lt;strong&gt;offset&lt;/strong&gt; of &lt;code&gt;0&lt;/code&gt; and a &lt;strong&gt;limit&lt;/strong&gt; of &lt;code&gt;10&lt;/code&gt;, the first page of the response contains the first 10 items from the complete list of items retrieved by the call. If &lt;strong&gt;offset&lt;/strong&gt; is &lt;code&gt;10&lt;/code&gt; and &lt;strong&gt;limit&lt;/strong&gt; is &lt;code&gt;20&lt;/code&gt;, the first page of the response contains items 11-30 from the complete result set. If this query parameter is not set, the default value is used and the first page of records is returned. &lt;br /&gt;&lt;br /&gt;&lt;b&gt;Default: &lt;/b&gt;0 (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Modstore\EbayFeedApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\InventoryTaskCollection
+     * @return \Modstore\EbayFeedApi\Model\InventoryTaskCollection
      */
     public function getInventoryTasks($feed_type = null, $schedule_id = null, $look_back_days = null, $date_range = null, $limit = null, $offset = null)
     {
@@ -641,9 +641,9 @@ class InventoryTaskApi
      * @param  string $limit The maximum number of tasks that can be returned on each page of the paginated response. Use this parameter in conjunction with the &lt;strong&gt;offset&lt;/strong&gt; parameter to control the pagination of the output. &lt;p&gt; &lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;strong&gt;Note:&lt;/strong&gt; This feature employs a zero-based list, where the first item in the list has an offset of &lt;code&gt;0&lt;/code&gt;.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;For example, if &lt;strong&gt;offset&lt;/strong&gt; is set to 10 and &lt;strong&gt;limit&lt;/strong&gt; is set to 10, the call retrieves tasks 11 thru 20 from the result set.&lt;/p&gt;&lt;p&gt;If this parameter is omitted, the default value is used. &lt;br /&gt;&lt;br /&gt;&lt;b&gt;Default: &lt;/b&gt; 10 &lt;br /&gt;&lt;br /&gt;&lt;b&gt;Maximum: &lt;/b&gt;500 (optional)
      * @param  string $offset The number of tasks to skip in the result set before returning the first task in the paginated response. &lt;p&gt;Combine &lt;strong&gt;offset&lt;/strong&gt; with the &lt;strong&gt;limit&lt;/strong&gt; query parameter to control the items returned in the response. For example, if you supply an &lt;strong&gt;offset&lt;/strong&gt; of &lt;code&gt;0&lt;/code&gt; and a &lt;strong&gt;limit&lt;/strong&gt; of &lt;code&gt;10&lt;/code&gt;, the first page of the response contains the first 10 items from the complete list of items retrieved by the call. If &lt;strong&gt;offset&lt;/strong&gt; is &lt;code&gt;10&lt;/code&gt; and &lt;strong&gt;limit&lt;/strong&gt; is &lt;code&gt;20&lt;/code&gt;, the first page of the response contains items 11-30 from the complete result set. If this query parameter is not set, the default value is used and the first page of records is returned. &lt;br /&gt;&lt;br /&gt;&lt;b&gt;Default: &lt;/b&gt;0 (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Modstore\EbayFeedApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\InventoryTaskCollection, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Modstore\EbayFeedApi\Model\InventoryTaskCollection, HTTP status code, HTTP response headers (array of strings)
      */
     public function getInventoryTasksWithHttpInfo($feed_type = null, $schedule_id = null, $look_back_days = null, $date_range = null, $limit = null, $offset = null)
     {
@@ -686,20 +686,20 @@ class InventoryTaskApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\InventoryTaskCollection' === '\SplFileObject') {
+                    if ('\Modstore\EbayFeedApi\Model\InventoryTaskCollection' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InventoryTaskCollection', []),
+                        ObjectSerializer::deserialize($content, '\Modstore\EbayFeedApi\Model\InventoryTaskCollection', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\InventoryTaskCollection';
+            $returnType = '\Modstore\EbayFeedApi\Model\InventoryTaskCollection';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -717,7 +717,7 @@ class InventoryTaskApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InventoryTaskCollection',
+                        '\Modstore\EbayFeedApi\Model\InventoryTaskCollection',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -765,7 +765,7 @@ class InventoryTaskApi
      */
     public function getInventoryTasksAsyncWithHttpInfo($feed_type = null, $schedule_id = null, $look_back_days = null, $date_range = null, $limit = null, $offset = null)
     {
-        $returnType = '\OpenAPI\Client\Model\InventoryTaskCollection';
+        $returnType = '\Modstore\EbayFeedApi\Model\InventoryTaskCollection';
         $request = $this->getInventoryTasksRequest($feed_type, $schedule_id, $look_back_days, $date_range, $limit, $offset);
 
         return $this->client

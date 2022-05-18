@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **next** | **string** | The path to the call URI for the next page of results. This value is returned if there is an additional page of results to return from the result set. | [optional]
 **offset** | **int** | The number of results skipped in the result set before listing the first returned result. This value can be set in the request with the &lt;b&gt;offset&lt;/b&gt; query parameter. &lt;p class&#x3D;\&quot;tablenote\&quot;&gt;&lt;strong&gt;Note: &lt;/strong&gt;The items in a paginated result set use a zero-based list where the first item in the list has an offset of &lt;code&gt;0&lt;/code&gt;.&lt;/p&gt; | [optional]
 **prev** | **string** | The path to the call URI for the previous page of results. This is returned if there is a previous page of results from the result set. | [optional]
-**schedules** | [**\OpenAPI\Client\Model\UserScheduleResponse[]**](UserScheduleResponse.md) | An array of the schedules on this page. An empty array is returned if the filter criteria excludes all tasks. | [optional]
+**schedules** | [**\Modstore\EbayFeedApi\Model\UserScheduleResponse[]**](UserScheduleResponse.md) | An array of the schedules on this page. An empty array is returned if the filter criteria excludes all tasks. | [optional]
 **total** | **int** | The total number of schedules that match the input criteria. | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

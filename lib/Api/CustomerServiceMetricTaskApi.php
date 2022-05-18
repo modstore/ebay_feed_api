@@ -4,7 +4,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Modstore\EbayFeedApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace Modstore\EbayFeedApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Modstore\EbayFeedApi\ApiException;
+use Modstore\EbayFeedApi\Configuration;
+use Modstore\EbayFeedApi\HeaderSelector;
+use Modstore\EbayFeedApi\ObjectSerializer;
 
 /**
  * CustomerServiceMetricTaskApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Modstore\EbayFeedApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -119,9 +119,9 @@ class CustomerServiceMetricTaskApi
      * Operation createCustomerServiceMetricTask
      *
      * @param  string $accept_language Use this header to specify the natural language in which the authenticated user desires the response. (required)
-     * @param  \OpenAPI\Client\Model\CreateServiceMetricsTaskRequest $create_service_metrics_task_request Request payload containing version, feedType, and optional filterCriteria. (required)
+     * @param  \Modstore\EbayFeedApi\Model\CreateServiceMetricsTaskRequest $create_service_metrics_task_request Request payload containing version, feedType, and optional filterCriteria. (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Modstore\EbayFeedApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -134,9 +134,9 @@ class CustomerServiceMetricTaskApi
      * Operation createCustomerServiceMetricTaskWithHttpInfo
      *
      * @param  string $accept_language Use this header to specify the natural language in which the authenticated user desires the response. (required)
-     * @param  \OpenAPI\Client\Model\CreateServiceMetricsTaskRequest $create_service_metrics_task_request Request payload containing version, feedType, and optional filterCriteria. (required)
+     * @param  \Modstore\EbayFeedApi\Model\CreateServiceMetricsTaskRequest $create_service_metrics_task_request Request payload containing version, feedType, and optional filterCriteria. (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Modstore\EbayFeedApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -192,7 +192,7 @@ class CustomerServiceMetricTaskApi
      * Operation createCustomerServiceMetricTaskAsync
      *
      * @param  string $accept_language Use this header to specify the natural language in which the authenticated user desires the response. (required)
-     * @param  \OpenAPI\Client\Model\CreateServiceMetricsTaskRequest $create_service_metrics_task_request Request payload containing version, feedType, and optional filterCriteria. (required)
+     * @param  \Modstore\EbayFeedApi\Model\CreateServiceMetricsTaskRequest $create_service_metrics_task_request Request payload containing version, feedType, and optional filterCriteria. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -211,7 +211,7 @@ class CustomerServiceMetricTaskApi
      * Operation createCustomerServiceMetricTaskAsyncWithHttpInfo
      *
      * @param  string $accept_language Use this header to specify the natural language in which the authenticated user desires the response. (required)
-     * @param  \OpenAPI\Client\Model\CreateServiceMetricsTaskRequest $create_service_metrics_task_request Request payload containing version, feedType, and optional filterCriteria. (required)
+     * @param  \Modstore\EbayFeedApi\Model\CreateServiceMetricsTaskRequest $create_service_metrics_task_request Request payload containing version, feedType, and optional filterCriteria. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -248,7 +248,7 @@ class CustomerServiceMetricTaskApi
      * Create request for operation 'createCustomerServiceMetricTask'
      *
      * @param  string $accept_language Use this header to specify the natural language in which the authenticated user desires the response. (required)
-     * @param  \OpenAPI\Client\Model\CreateServiceMetricsTaskRequest $create_service_metrics_task_request Request payload containing version, feedType, and optional filterCriteria. (required)
+     * @param  \Modstore\EbayFeedApi\Model\CreateServiceMetricsTaskRequest $create_service_metrics_task_request Request payload containing version, feedType, and optional filterCriteria. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -355,9 +355,9 @@ class CustomerServiceMetricTaskApi
      *
      * @param  string $task_id Use this path parameter to specify the task ID value for the customer service metric task to retrieve. (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Modstore\EbayFeedApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ServiceMetricsTask
+     * @return \Modstore\EbayFeedApi\Model\ServiceMetricsTask
      */
     public function getCustomerServiceMetricTask($task_id)
     {
@@ -370,9 +370,9 @@ class CustomerServiceMetricTaskApi
      *
      * @param  string $task_id Use this path parameter to specify the task ID value for the customer service metric task to retrieve. (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Modstore\EbayFeedApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ServiceMetricsTask, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Modstore\EbayFeedApi\Model\ServiceMetricsTask, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCustomerServiceMetricTaskWithHttpInfo($task_id)
     {
@@ -415,20 +415,20 @@ class CustomerServiceMetricTaskApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ServiceMetricsTask' === '\SplFileObject') {
+                    if ('\Modstore\EbayFeedApi\Model\ServiceMetricsTask' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ServiceMetricsTask', []),
+                        ObjectSerializer::deserialize($content, '\Modstore\EbayFeedApi\Model\ServiceMetricsTask', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ServiceMetricsTask';
+            $returnType = '\Modstore\EbayFeedApi\Model\ServiceMetricsTask';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -446,7 +446,7 @@ class CustomerServiceMetricTaskApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ServiceMetricsTask',
+                        '\Modstore\EbayFeedApi\Model\ServiceMetricsTask',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -484,7 +484,7 @@ class CustomerServiceMetricTaskApi
      */
     public function getCustomerServiceMetricTaskAsyncWithHttpInfo($task_id)
     {
-        $returnType = '\OpenAPI\Client\Model\ServiceMetricsTask';
+        $returnType = '\Modstore\EbayFeedApi\Model\ServiceMetricsTask';
         $request = $this->getCustomerServiceMetricTaskRequest($task_id);
 
         return $this->client
@@ -626,9 +626,9 @@ class CustomerServiceMetricTaskApi
      * @param  string $look_back_days The number of previous days in which to search for tasks. Do not use with the &lt;code&gt;date_range&lt;/code&gt; parameter. If both &lt;code&gt;date_range&lt;/code&gt; and &lt;code&gt;look_back_days&lt;/code&gt; are omitted, this parameter&#39;s default value is used. &lt;p&gt;&lt;b&gt;Default value:&lt;/b&gt; 7&lt;/p&gt;&lt;p&gt;&lt;b&gt;Range:&lt;/b&gt; 1-90 (inclusive)&lt;/p&gt; (optional)
      * @param  string $offset The number of customer service metric tasks to skip in the result set before returning the first task in the paginated response. &lt;p&gt;Combine &lt;strong&gt;offset&lt;/strong&gt; with the &lt;strong&gt;limit&lt;/strong&gt; query parameter to control the items returned in the response. For example, if you supply an &lt;strong&gt;offset&lt;/strong&gt; of &lt;code&gt;0&lt;/code&gt; and a &lt;strong&gt;limit&lt;/strong&gt; of &lt;code&gt;10&lt;/code&gt;, the first page of the response contains the first 10 items from the complete list of items retrieved by the call. If &lt;strong&gt;offset&lt;/strong&gt; is &lt;code&gt;10&lt;/code&gt; and &lt;strong&gt;limit&lt;/strong&gt; is &lt;code&gt;20&lt;/code&gt;, the first page of the response contains items 11-30 from the complete result set. &lt;br /&gt;&lt;br /&gt;&lt;b&gt;Default: &lt;/b&gt;0 (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Modstore\EbayFeedApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CustomerServiceMetricTaskCollection
+     * @return \Modstore\EbayFeedApi\Model\CustomerServiceMetricTaskCollection
      */
     public function getCustomerServiceMetricTasks($date_range = null, $feed_type = null, $limit = null, $look_back_days = null, $offset = null)
     {
@@ -645,9 +645,9 @@ class CustomerServiceMetricTaskApi
      * @param  string $look_back_days The number of previous days in which to search for tasks. Do not use with the &lt;code&gt;date_range&lt;/code&gt; parameter. If both &lt;code&gt;date_range&lt;/code&gt; and &lt;code&gt;look_back_days&lt;/code&gt; are omitted, this parameter&#39;s default value is used. &lt;p&gt;&lt;b&gt;Default value:&lt;/b&gt; 7&lt;/p&gt;&lt;p&gt;&lt;b&gt;Range:&lt;/b&gt; 1-90 (inclusive)&lt;/p&gt; (optional)
      * @param  string $offset The number of customer service metric tasks to skip in the result set before returning the first task in the paginated response. &lt;p&gt;Combine &lt;strong&gt;offset&lt;/strong&gt; with the &lt;strong&gt;limit&lt;/strong&gt; query parameter to control the items returned in the response. For example, if you supply an &lt;strong&gt;offset&lt;/strong&gt; of &lt;code&gt;0&lt;/code&gt; and a &lt;strong&gt;limit&lt;/strong&gt; of &lt;code&gt;10&lt;/code&gt;, the first page of the response contains the first 10 items from the complete list of items retrieved by the call. If &lt;strong&gt;offset&lt;/strong&gt; is &lt;code&gt;10&lt;/code&gt; and &lt;strong&gt;limit&lt;/strong&gt; is &lt;code&gt;20&lt;/code&gt;, the first page of the response contains items 11-30 from the complete result set. &lt;br /&gt;&lt;br /&gt;&lt;b&gt;Default: &lt;/b&gt;0 (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Modstore\EbayFeedApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CustomerServiceMetricTaskCollection, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Modstore\EbayFeedApi\Model\CustomerServiceMetricTaskCollection, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCustomerServiceMetricTasksWithHttpInfo($date_range = null, $feed_type = null, $limit = null, $look_back_days = null, $offset = null)
     {
@@ -690,20 +690,20 @@ class CustomerServiceMetricTaskApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CustomerServiceMetricTaskCollection' === '\SplFileObject') {
+                    if ('\Modstore\EbayFeedApi\Model\CustomerServiceMetricTaskCollection' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CustomerServiceMetricTaskCollection', []),
+                        ObjectSerializer::deserialize($content, '\Modstore\EbayFeedApi\Model\CustomerServiceMetricTaskCollection', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\CustomerServiceMetricTaskCollection';
+            $returnType = '\Modstore\EbayFeedApi\Model\CustomerServiceMetricTaskCollection';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -721,7 +721,7 @@ class CustomerServiceMetricTaskApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CustomerServiceMetricTaskCollection',
+                        '\Modstore\EbayFeedApi\Model\CustomerServiceMetricTaskCollection',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -767,7 +767,7 @@ class CustomerServiceMetricTaskApi
      */
     public function getCustomerServiceMetricTasksAsyncWithHttpInfo($date_range = null, $feed_type = null, $limit = null, $look_back_days = null, $offset = null)
     {
-        $returnType = '\OpenAPI\Client\Model\CustomerServiceMetricTaskCollection';
+        $returnType = '\Modstore\EbayFeedApi\Model\CustomerServiceMetricTaskCollection';
         $request = $this->getCustomerServiceMetricTasksRequest($date_range, $feed_type, $limit, $look_back_days, $offset);
 
         return $this->client

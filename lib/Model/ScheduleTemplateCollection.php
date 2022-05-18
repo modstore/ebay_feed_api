@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Modstore\EbayFeedApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Modstore\EbayFeedApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Modstore\EbayFeedApi\ObjectSerializer;
 
 /**
  * ScheduleTemplateCollection Class Doc Comment
  *
  * @category Class
  * @description The type that defines the fields for a paginated result set of schedule templates. The response consists of 0 or more sequenced &lt;em&gt; pages&lt;/em&gt; where each page has 0 or more items.
- * @package  OpenAPI\Client
+ * @package  Modstore\EbayFeedApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -65,7 +65,7 @@ class ScheduleTemplateCollection implements ModelInterface, ArrayAccess, \JsonSe
         'next' => 'string',
         'offset' => 'int',
         'prev' => 'string',
-        'schedule_templates' => '\OpenAPI\Client\Model\ScheduleTemplateResponse[]',
+        'schedule_templates' => '\Modstore\EbayFeedApi\Model\ScheduleTemplateResponse[]',
         'total' => 'int'
     ];
 
@@ -365,7 +365,7 @@ class ScheduleTemplateCollection implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets schedule_templates
      *
-     * @return \OpenAPI\Client\Model\ScheduleTemplateResponse[]|null
+     * @return \Modstore\EbayFeedApi\Model\ScheduleTemplateResponse[]|null
      */
     public function getScheduleTemplates()
     {
@@ -375,7 +375,7 @@ class ScheduleTemplateCollection implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets schedule_templates
      *
-     * @param \OpenAPI\Client\Model\ScheduleTemplateResponse[]|null $schedule_templates An array of the schedule templates on this page. An empty array is returned if the filter criteria excludes all tasks.
+     * @param \Modstore\EbayFeedApi\Model\ScheduleTemplateResponse[]|null $schedule_templates An array of the schedule templates on this page. An empty array is returned if the filter criteria excludes all tasks.
      *
      * @return self
      */

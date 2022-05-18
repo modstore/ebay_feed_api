@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Modstore\EbayFeedApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Modstore\EbayFeedApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Modstore\EbayFeedApi\ObjectSerializer;
 
 /**
  * CustomerServiceMetricTaskCollection Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Modstore\EbayFeedApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -64,7 +64,7 @@ class CustomerServiceMetricTaskCollection implements ModelInterface, ArrayAccess
         'next' => 'string',
         'offset' => 'int',
         'prev' => 'string',
-        'tasks' => '\OpenAPI\Client\Model\ServiceMetricsTask[]',
+        'tasks' => '\Modstore\EbayFeedApi\Model\ServiceMetricsTask[]',
         'total' => 'int'
     ];
 
@@ -364,7 +364,7 @@ class CustomerServiceMetricTaskCollection implements ModelInterface, ArrayAccess
     /**
      * Gets tasks
      *
-     * @return \OpenAPI\Client\Model\ServiceMetricsTask[]|null
+     * @return \Modstore\EbayFeedApi\Model\ServiceMetricsTask[]|null
      */
     public function getTasks()
     {
@@ -374,7 +374,7 @@ class CustomerServiceMetricTaskCollection implements ModelInterface, ArrayAccess
     /**
      * Sets tasks
      *
-     * @param \OpenAPI\Client\Model\ServiceMetricsTask[]|null $tasks An array of the customer service tasks on this page. The tasks are sorted by creation date. An empty array is returned if the filter criteria excludes all tasks.
+     * @param \Modstore\EbayFeedApi\Model\ServiceMetricsTask[]|null $tasks An array of the customer service tasks on this page. The tasks are sorted by creation date. An empty array is returned if the filter criteria excludes all tasks.
      *
      * @return self
      */

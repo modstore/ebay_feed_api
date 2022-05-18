@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Modstore\EbayFeedApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Modstore\EbayFeedApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Modstore\EbayFeedApi\ObjectSerializer;
 
 /**
  * CreateOrderTaskRequest Class Doc Comment
  *
  * @category Class
  * @description The type that defines the fields for the &lt;b&gt; createOrderTask&lt;/b&gt; request.
- * @package  OpenAPI\Client
+ * @package  Modstore\EbayFeedApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -61,7 +61,7 @@ class CreateOrderTaskRequest implements ModelInterface, ArrayAccess, \JsonSerial
       */
     protected static $openAPITypes = [
         'feed_type' => 'string',
-        'filter_criteria' => '\OpenAPI\Client\Model\OrderFilterCriteria',
+        'filter_criteria' => '\Modstore\EbayFeedApi\Model\OrderFilterCriteria',
         'schema_version' => 'string'
     ];
 
@@ -245,7 +245,7 @@ class CreateOrderTaskRequest implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets filter_criteria
      *
-     * @return \OpenAPI\Client\Model\OrderFilterCriteria|null
+     * @return \Modstore\EbayFeedApi\Model\OrderFilterCriteria|null
      */
     public function getFilterCriteria()
     {
@@ -255,7 +255,7 @@ class CreateOrderTaskRequest implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets filter_criteria
      *
-     * @param \OpenAPI\Client\Model\OrderFilterCriteria|null $filter_criteria filter_criteria
+     * @param \Modstore\EbayFeedApi\Model\OrderFilterCriteria|null $filter_criteria filter_criteria
      *
      * @return self
      */

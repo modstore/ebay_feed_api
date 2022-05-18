@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Modstore\EbayFeedApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Modstore\EbayFeedApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Modstore\EbayFeedApi\ObjectSerializer;
 
 /**
  * OrderFilterCriteria Class Doc Comment
  *
  * @category Class
  * @description The type that defines the fields for the order filters.
- * @package  OpenAPI\Client
+ * @package  Modstore\EbayFeedApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -60,8 +60,8 @@ class OrderFilterCriteria implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'creation_date_range' => '\OpenAPI\Client\Model\DateRange',
-        'modified_date_range' => '\OpenAPI\Client\Model\DateRange',
+        'creation_date_range' => '\Modstore\EbayFeedApi\Model\DateRange',
+        'modified_date_range' => '\Modstore\EbayFeedApi\Model\DateRange',
         'order_status' => 'string'
     ];
 
@@ -221,7 +221,7 @@ class OrderFilterCriteria implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets creation_date_range
      *
-     * @return \OpenAPI\Client\Model\DateRange|null
+     * @return \Modstore\EbayFeedApi\Model\DateRange|null
      */
     public function getCreationDateRange()
     {
@@ -231,7 +231,7 @@ class OrderFilterCriteria implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets creation_date_range
      *
-     * @param \OpenAPI\Client\Model\DateRange|null $creation_date_range creation_date_range
+     * @param \Modstore\EbayFeedApi\Model\DateRange|null $creation_date_range creation_date_range
      *
      * @return self
      */
@@ -245,7 +245,7 @@ class OrderFilterCriteria implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets modified_date_range
      *
-     * @return \OpenAPI\Client\Model\DateRange|null
+     * @return \Modstore\EbayFeedApi\Model\DateRange|null
      */
     public function getModifiedDateRange()
     {
@@ -255,7 +255,7 @@ class OrderFilterCriteria implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets modified_date_range
      *
-     * @param \OpenAPI\Client\Model\DateRange|null $modified_date_range modified_date_range
+     * @param \Modstore\EbayFeedApi\Model\DateRange|null $modified_date_range modified_date_range
      *
      * @return self
      */

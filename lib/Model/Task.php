@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Modstore\EbayFeedApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Modstore\EbayFeedApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Modstore\EbayFeedApi\ObjectSerializer;
 
 /**
  * Task Class Doc Comment
  *
  * @category Class
  * @description The type that defines the fields for the task details.
- * @package  OpenAPI\Client
+ * @package  Modstore\EbayFeedApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -67,7 +67,7 @@ class Task implements ModelInterface, ArrayAccess, \JsonSerializable
         'schema_version' => 'string',
         'status' => 'string',
         'task_id' => 'string',
-        'upload_summary' => '\OpenAPI\Client\Model\UploadSummary'
+        'upload_summary' => '\Modstore\EbayFeedApi\Model\UploadSummary'
     ];
 
     /**
@@ -419,7 +419,7 @@ class Task implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets upload_summary
      *
-     * @return \OpenAPI\Client\Model\UploadSummary|null
+     * @return \Modstore\EbayFeedApi\Model\UploadSummary|null
      */
     public function getUploadSummary()
     {
@@ -429,7 +429,7 @@ class Task implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets upload_summary
      *
-     * @param \OpenAPI\Client\Model\UploadSummary|null $upload_summary upload_summary
+     * @param \Modstore\EbayFeedApi\Model\UploadSummary|null $upload_summary upload_summary
      *
      * @return self
      */

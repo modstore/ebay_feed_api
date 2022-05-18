@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Modstore\EbayFeedApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Modstore\EbayFeedApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Modstore\EbayFeedApi\ObjectSerializer;
 
 /**
  * ScheduleTemplateResponse Class Doc Comment
  *
  * @category Class
  * @description The type that defines the fields for a paginated result set of available schedule templates. The response consists of 0 or more sequenced &lt;em&gt; pages&lt;/em&gt; where each page has 0 or more items.
- * @package  OpenAPI\Client
+ * @package  Modstore\EbayFeedApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -65,7 +65,7 @@ class ScheduleTemplateResponse implements ModelInterface, ArrayAccess, \JsonSeri
         'name' => 'string',
         'schedule_template_id' => 'string',
         'status' => 'string',
-        'supported_configurations' => '\OpenAPI\Client\Model\SupportedConfiguration[]'
+        'supported_configurations' => '\Modstore\EbayFeedApi\Model\SupportedConfiguration[]'
     ];
 
     /**
@@ -359,7 +359,7 @@ class ScheduleTemplateResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets supported_configurations
      *
-     * @return \OpenAPI\Client\Model\SupportedConfiguration[]|null
+     * @return \Modstore\EbayFeedApi\Model\SupportedConfiguration[]|null
      */
     public function getSupportedConfigurations()
     {
@@ -369,7 +369,7 @@ class ScheduleTemplateResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets supported_configurations
      *
-     * @param \OpenAPI\Client\Model\SupportedConfiguration[]|null $supported_configurations An array of the configuration supported by this template.
+     * @param \Modstore\EbayFeedApi\Model\SupportedConfiguration[]|null $supported_configurations An array of the configuration supported by this template.
      *
      * @return self
      */

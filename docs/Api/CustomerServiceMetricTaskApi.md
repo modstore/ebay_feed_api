@@ -1,4 +1,4 @@
-# OpenAPI\Client\CustomerServiceMetricTaskApi
+# Modstore\EbayFeedApi\CustomerServiceMetricTaskApi
 
 All URIs are relative to https://api.ebay.com/sell/feed/v1.
 
@@ -27,17 +27,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: api_auth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Modstore\EbayFeedApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\CustomerServiceMetricTaskApi(
+$apiInstance = new Modstore\EbayFeedApi\Api\CustomerServiceMetricTaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $accept_language = 'accept_language_example'; // string | Use this header to specify the natural language in which the authenticated user desires the response.
-$create_service_metrics_task_request = new \OpenAPI\Client\Model\CreateServiceMetricsTaskRequest(); // \OpenAPI\Client\Model\CreateServiceMetricsTaskRequest | Request payload containing version, feedType, and optional filterCriteria.
+$create_service_metrics_task_request = new \Modstore\EbayFeedApi\Model\CreateServiceMetricsTaskRequest(); // \Modstore\EbayFeedApi\Model\CreateServiceMetricsTaskRequest | Request payload containing version, feedType, and optional filterCriteria.
 
 try {
     $apiInstance->createCustomerServiceMetricTask($accept_language, $create_service_metrics_task_request);
@@ -51,7 +51,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **accept_language** | **string**| Use this header to specify the natural language in which the authenticated user desires the response. |
- **create_service_metrics_task_request** | [**\OpenAPI\Client\Model\CreateServiceMetricsTaskRequest**](../Model/CreateServiceMetricsTaskRequest.md)| Request payload containing version, feedType, and optional filterCriteria. |
+ **create_service_metrics_task_request** | [**\Modstore\EbayFeedApi\Model\CreateServiceMetricsTaskRequest**](../Model/CreateServiceMetricsTaskRequest.md)| Request payload containing version, feedType, and optional filterCriteria. |
 
 ### Return type
 
@@ -73,7 +73,7 @@ void (empty response body)
 ## `getCustomerServiceMetricTask()`
 
 ```php
-getCustomerServiceMetricTask($task_id): \OpenAPI\Client\Model\ServiceMetricsTask
+getCustomerServiceMetricTask($task_id): \Modstore\EbayFeedApi\Model\ServiceMetricsTask
 ```
 
 
@@ -88,10 +88,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: api_auth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Modstore\EbayFeedApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\CustomerServiceMetricTaskApi(
+$apiInstance = new Modstore\EbayFeedApi\Api\CustomerServiceMetricTaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -115,7 +115,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ServiceMetricsTask**](../Model/ServiceMetricsTask.md)
+[**\Modstore\EbayFeedApi\Model\ServiceMetricsTask**](../Model/ServiceMetricsTask.md)
 
 ### Authorization
 
@@ -133,7 +133,7 @@ Name | Type | Description  | Notes
 ## `getCustomerServiceMetricTasks()`
 
 ```php
-getCustomerServiceMetricTasks($date_range, $feed_type, $limit, $look_back_days, $offset): \OpenAPI\Client\Model\CustomerServiceMetricTaskCollection
+getCustomerServiceMetricTasks($date_range, $feed_type, $limit, $look_back_days, $offset): \Modstore\EbayFeedApi\Model\CustomerServiceMetricTaskCollection
 ```
 
 
@@ -148,10 +148,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: api_auth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Modstore\EbayFeedApi\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\CustomerServiceMetricTaskApi(
+$apiInstance = new Modstore\EbayFeedApi\Api\CustomerServiceMetricTaskApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -183,7 +183,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CustomerServiceMetricTaskCollection**](../Model/CustomerServiceMetricTaskCollection.md)
+[**\Modstore\EbayFeedApi\Model\CustomerServiceMetricTaskCollection**](../Model/CustomerServiceMetricTaskCollection.md)
 
 ### Authorization
 

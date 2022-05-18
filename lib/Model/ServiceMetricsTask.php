@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Modstore\EbayFeedApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Modstore\EbayFeedApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Modstore\EbayFeedApi\ObjectSerializer;
 
 /**
  * ServiceMetricsTask Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Modstore\EbayFeedApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -63,7 +63,7 @@ class ServiceMetricsTask implements ModelInterface, ArrayAccess, \JsonSerializab
         'creation_date' => 'string',
         'detail_href' => 'string',
         'feed_type' => 'string',
-        'filter_criteria' => '\OpenAPI\Client\Model\CustomerServiceMetricsFilterCriteria',
+        'filter_criteria' => '\Modstore\EbayFeedApi\Model\CustomerServiceMetricsFilterCriteria',
         'schema_version' => 'string',
         'status' => 'string',
         'task_id' => 'string'
@@ -346,7 +346,7 @@ class ServiceMetricsTask implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets filter_criteria
      *
-     * @return \OpenAPI\Client\Model\CustomerServiceMetricsFilterCriteria|null
+     * @return \Modstore\EbayFeedApi\Model\CustomerServiceMetricsFilterCriteria|null
      */
     public function getFilterCriteria()
     {
@@ -356,7 +356,7 @@ class ServiceMetricsTask implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets filter_criteria
      *
-     * @param \OpenAPI\Client\Model\CustomerServiceMetricsFilterCriteria|null $filter_criteria filter_criteria
+     * @param \Modstore\EbayFeedApi\Model\CustomerServiceMetricsFilterCriteria|null $filter_criteria filter_criteria
      *
      * @return self
      */
